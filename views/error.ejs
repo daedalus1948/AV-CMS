@@ -1,0 +1,14 @@
+<div class="text-wrapper">
+    <div class="error-header">
+        <p><%= error.statusCode %></p>
+        <p><%= error.name %></p>
+    </div>
+    <% if (error.info) { %>
+        <div class="info-text">
+            <% for(let i=0; i<error.info.length; i++) { %>
+                <p><%= error.info[i].message %></p>    
+            <% } %>
+        </div>
+    <% } %>
+</div>
+

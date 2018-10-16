@@ -1,0 +1,11 @@
+<form class="POSTFORM" action="/audios" method="POST" enctype="multipart/form-data">
+    <input type="hidden" name="_csrf" value="<%= _csrf %>" />
+    <div class="input-wrapper">
+            <input name="SongName" placeholder="song name"></input>
+    </div>
+    <div class="input-wrapper">
+            <input type="file" name="AudioFilePath"></input>
+    </div>
+    <div class="error">errors</div>
+    <button type="submit">add audio</button>
+</form>

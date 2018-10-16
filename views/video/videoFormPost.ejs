@@ -1,0 +1,11 @@
+<form class="POSTFORM" action="/videos" method="POST" enctype="multipart/form-data">
+    <input type="hidden" name="_csrf" value="<%= _csrf %>" />
+    <div class="input-wrapper">
+            <input name="VideoName" placeholder="video name"></input>
+    </div>
+    <div class="input-wrapper">
+            <input type="file" name="VideoFilePath"></input>
+    </div>
+    <div class="error">errors</div>
+    <button type="submit">add video</button>
+</form>

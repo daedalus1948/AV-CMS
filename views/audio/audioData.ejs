@@ -1,0 +1,28 @@
+<% for(let i=0; i<data.length; i++) { %> 
+        <div class="item">
+            <div class="item-meta">
+                <div class="left">
+                    <div class="info-text"><%= data[i]['User.Username'] %></div>
+                </div>
+                <div class="middle"> 
+                    <a href="<%= `/audios/${data[i].Id}/` %>"><%= data[i].SongName %></a>
+                </div>
+                <div class="right">
+                    <% if (user.checkPermission("PUT", "Audio")) { %>
+                    <a href="<%= `/audios/${data[i].Id}/edit` %>">edit</a>
+                    <% } %>
+                    <% if (user.checkPermission("DELETE", "Audio")) { %>
+                    <a href="<%= `/audios/${data[i].Id}/delete` %>">delete</a>
+                    <% } %>
+                </div>
+            </div>
+            <div class="item-data">
+              <div class="player">
+                <audio controls class="audio-controls">
+                  <source src="<%= `/audio/${data[i].AudioFilePath}` %>" type="audio/mpeg">
+                </audio>
+              </div>
+            </div>
+          </div>
+<% } %>
+

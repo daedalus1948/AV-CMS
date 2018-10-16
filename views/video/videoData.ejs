@@ -1,0 +1,28 @@
+<% for(let i=0; i<data.length; i++) { %> 
+        <div class="item">
+            <div class="item-meta">
+                <div class="left">
+                    <div class="info-text"><%= data[i]['User.Username'] %></div>
+                </div>
+                <div class="middle"> 
+                    <a href="<%= `/videos/${data[i].Id}/` %>"><%= data[i].VideoName %></a>
+                </div>
+                <div class="right">
+                    <% if (user.checkPermission("PUT", "Video")) { %>
+                    <a href="<%= `/videos/${data[i].Id}/edit` %>">edit</a>
+                    <% } %>
+                    <% if (user.checkPermission("DELETE", "Video")) { %>
+                    <a href="<%= `/videos/${data[i].Id}/delete` %>">delete</a>
+                    <% } %>
+                </div>
+            </div>
+            <div class="item-data">
+              <div class="player">
+                <video controls class="video-controls">
+                  <source src="<%= `/video/${data[i].VideoFilePath}` %>" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+<% } %>
+

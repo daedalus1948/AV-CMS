@@ -1,0 +1,18 @@
+<div class="header">
+        <div class="left">
+            <a href="/">home</a>
+            <a href="/audios/new">audio</a>
+            <a href="/videos/new">video</a>      
+   
+        </div>
+      <div class="right">
+            <% if (locals.user.loggedIn) { %>
+                <p><%= user.username %></p>
+                <a href="/logout">logout</a>
+            <% } else { %>
+                <a href="/register">register</a>
+                <a href="/login">login</a>
+            <% } %>
+
+      </div>
+</div>

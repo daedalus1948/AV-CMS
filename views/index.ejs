@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>AV CMS</title>
+        <link rel="stylesheet" href="/css/index.css" type="text/css"></link>
+    </head>
+
+    <body>
+
+        <div class="app">
+            <% if (locals.templateData) { %>
+                <%- include('header', templateData); %>
+            <% } else { %>
+                <%- include('header', {}); %>
+            <% } %>
+
+            <div class="content">
+            <% if (locals.template && locals.templateData) { %>
+                    <%- include(template, templateData); %>
+            <% } else { %>
+                <div class="link-board">
+                    <a href="audios">audios</a>
+                    <a href="videos">videos</a>
+                </div>
+            <% } %>
+            </div>
+
+            <% if (locals.templateData) { %>
+                <%- include('footer', templateData); %>
+            <% } else { %>
+                <%- include('footer', {}); %>
+            <% } %>
+        </div>
+
+    </body>
+
+ </html>

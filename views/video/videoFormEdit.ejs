@@ -1,0 +1,12 @@
+<form class="POSTFORM" method="POST" enctype="multipart/form-data">
+	<input type="hidden" name="_csrf" value="<%= _csrf %>" />
+	<div class="input-wrapper">
+			<input name="VideoName" placeholder="video name" value="<%= formData[0].VideoName %>"></input>
+	</div>
+	<div class="input-wrapper">
+			<input type="file" name="VideoFilePath"></input>
+	</div>
+	<div class="error">errors</div>
+	<button type="submit">edit video</button>
+</form>
+

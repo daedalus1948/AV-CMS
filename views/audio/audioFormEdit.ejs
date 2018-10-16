@@ -1,0 +1,12 @@
+<form class="POSTFORM" method="POST" enctype="multipart/form-data">
+	<input type="hidden" name="_csrf" value="<%= _csrf %>" />
+	<div class="input-wrapper">
+			<input name="SongName" placeholder="song name" value="<%= formData[0].SongName %>"></input>
+	</div>
+	<div class="input-wrapper">
+			<input type="file" name="AudioFilePath"></input>
+	</div>
+	<div class="error">errors</div>
+	<button type="submit">edit audio</button>
+</form>
+
