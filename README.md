@@ -7,17 +7,6 @@ The management system is based on the role based access control permission syste
 
 This application has been built to test the RBAC permission model. It is not intended for production.
 
-## Test accounts
-
-USERNAME=ADMIN
-PASSWORD=ADMIN
-
-USERNAME=VIDEOADMIN
-PASSWORD=VIDEOADMIN
-
-USERNAME=AUDIOADMIN
-PASSWORD=AUDIOADMIN
-
 ## Instructions
 
 To start the application, clone the repository and 'npm install' 
@@ -25,7 +14,7 @@ all the necessary dependencies specified in the package.json file.
 
 1) Configure .env file in the root directory of this project, follow the example_env.txt file structure.
 2) Run the following command - "npm run start-dev" to start the server/application.
-3) Login with any of the test accounts.
+3) Login with any of the test accounts specified in the test_accounts.txt file.
 
 ## Dependencies
 
