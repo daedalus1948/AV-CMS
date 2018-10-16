@@ -16,6 +16,11 @@ all the necessary dependencies specified in the package.json file.
 2) Run the following command - "npm run start-dev" to start the server/application.
 3) Login with any of the test accounts specified in the test_accounts.txt file.
 
+## Notes
+
+Due to the nature of how the multer package is currently is configured, submitted files are always uploaded.
+Nevertheless, further resource manipulation is dependent on the RBAC permission system.
+
 ## Dependencies
 
 Javascript ES6, Node.js 10+ and other dependencies specified in package.json
