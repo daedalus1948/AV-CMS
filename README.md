@@ -18,7 +18,7 @@ all the necessary dependencies specified in the package.json file.
 
 ## Notes
 
-Due to the nature of how the multer package is currently is configured, submitted files are always uploaded.
+Due to nature of how the multer package currently is configured, submitted files are always uploaded.
 However, further resource manipulation depends on the RBAC permission system.
 
 ## Dependencies
