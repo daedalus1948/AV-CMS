@@ -3,6 +3,8 @@
 AV-CMS is a small content management system for multimedia files written in Node and Express.
 The management system is based on the role based access control permission system.
 
+![AV-CMS](https://github.com/daedalus1948/project_images/blob/master/AV-CMS.png)
+
 ## Additional Information
 
 This application has been built to test the RBAC permission model. It is not intended for production.
