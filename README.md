@@ -36,4 +36,4 @@ However, further resource manipulation depends on the RBAC permission system.
 Javascript ES6, Node.js 10+ and other dependencies specified in package.json
 
 ### Thank you creators of Node, Express and others
-### Created by Daedalus1948@github, 2018
+### Created by pre-zbr/Daedalus1948@github, 2018
